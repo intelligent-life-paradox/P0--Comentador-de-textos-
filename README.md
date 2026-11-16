@@ -4,7 +4,9 @@ Aplicação em Python que utilizará um modelo de linguagem (LLM) para explicar 
 
 Projeto da capacitação Softex/Trends-IA, referente ao **P0 — Primeiro fluxo com LLM**.
 
-**Status:** planejamento. Este repositório contém a proposta inicial; a aplicação ainda não foi implementada e não há testes executados ou instruções de instalação disponíveis.
+**Status:** especificação inicial concluída (DevQuest: missão 01 de 08). A aplicação ainda não foi implementada e não há testes executados ou instruções de instalação disponíveis.
+
+Consulte a [Missão 01 — Especificação do comportamento](docs/missao-01-especificacao.md) para público, contrato de entrada e saída, critérios de qualidade, casos de avaliação e escolha técnica inicial.
 
 ## O problema
 
@@ -45,7 +47,7 @@ Este exemplo descreve o resultado desejado; não representa uma execução da ap
 - **Resposta organizada:** facilitar a leitura e a avaliação das explicações.
 - **Preservação do sentido:** simplificar sem apresentar interpretações incertas como fatos.
 
-O provedor, o modelo, as dependências e o formato de processamento da resposta ainda serão definidos conforme a documentação do serviço e as orientações institucionais aplicáveis.
+A escolha inicial é a **Gemini API**, com o modelo de referência `gemini-3.5-flash-lite`, SDK Python oficial e resposta em texto organizado. A disponibilidade na conta e as orientações institucionais ainda precisam ser conferidas antes da integração. O modelo será configurável. As justificativas, fontes e pendências estão na [especificação da missão 01](docs/missao-01-especificacao.md#6-escolha-técnica-inicial).
 
 ## Plano de testes
 
@@ -65,7 +67,8 @@ Além de verificar o funcionamento do programa, será necessário avaliar manual
 
 ## Etapas para concluir o P0
 
-- [ ] Escolher o provedor e o modelo conforme as orientações do curso.
+- [x] Definir o comportamento e registrar provedor e modelo iniciais na missão 01.
+- [ ] Confirmar o acesso ao serviço e a adequação às orientações institucionais.
 - [ ] Implementar a entrada textual e sua validação.
 - [ ] Integrar a API do LLM.
 - [ ] Processar e apresentar a resposta.
@@ -81,7 +84,7 @@ A documentação final deverá permitir que outra pessoa instale, configure e ex
 
 Na etapa de planejamento, o autor utilizou o ChatGPT para discutir a ideia, avaliar sua adequação ao enunciado e delimitar o escopo inicial.
 
-O Codex foi utilizado para redigir e publicar este README e adicionar o projeto ao repositório agregador. Até esta etapa, não houve implementação de código nem execução de testes por essas ferramentas.
+O Codex foi utilizado para redigir e publicar este README, adicionar o projeto ao repositório agregador e concluir a documentação da missão 01. Nessa missão, definiu uma proposta de público, comportamento, critérios de qualidade e casos de avaliação, além de consultar fontes oficiais para a escolha técnica inicial. Até esta etapa, não houve implementação de código, chamada à API do LLM nem execução de testes por essas ferramentas.
 
 Esta declaração deverá ser atualizada conforme novas ferramentas de IA forem utilizadas no desenvolvimento.
 
